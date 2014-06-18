@@ -2103,8 +2103,21 @@ items=$.map(items, function (images) {
 	return images.Images; 
 });
 
+items.forEach(function(item) {
+      item.Images.forEach(function(watch){
+        $('#watches').append(watch.url_170x135)
+      });
+
+$.each(items, function (inception) {
+	$.each(inception, function) {
+		$('.listing').append(inception.url_170x135)
+		}
+		});
+}
 		</script>
-
-
+		<ul>
+			<li class="listing"></li>
+		
+		</ul>
 	</body>
 </html>

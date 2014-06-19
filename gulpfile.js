@@ -60,5 +60,5 @@ gulp.task('default', function() {
 // Deploy to gh-pages
 gulp.task('deploy', function() {
   gulp.src("./dist/**/*")
-    .pipe(deploy('git@github.com:amygori/etsy.git', 'origin'));
+    .pipe(deploy('<enter your repo git url here>', 'origin'));
 });

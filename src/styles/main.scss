@@ -1,5 +1,5 @@
-@import "http://fonts.googleapis.com/css?family=Lato|Rufina";
-@import "bourbon/bourbon"
+@import url("http://fonts.googleapis.com/css?family=Lato|Rufina");
+@import "bourbon/bourbon";
 
 //Gallery layout
 div.gallery {
@@ -18,5 +18,6 @@ div.listing {
 
 .listing p {
 	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
 }
 

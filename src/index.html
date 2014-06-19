@@ -2117,13 +2117,15 @@
 //jQuery: get images and populate list
 $.each(items, function( i, img ) {
     var listing = "<li>" + img + "</li>";
-    $(".listing").append(listing);
+    $(".listing" + i).append(listing);
 });
 
 //Just get the titles
 items.forEach (function (getTitle) {
 	$('li').append(getTitle.title);
 })
+
+
 
 
 		</script>

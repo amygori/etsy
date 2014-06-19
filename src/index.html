@@ -2099,22 +2099,21 @@
   }
 ];
 
-items=$.map(items, function (images) {
+/*items=$.map(items, function (images) {
 	return images.Images; 
-});
+});*/
 
-items.forEach(function(item) {
-      item.Images.forEach(function(watch){
-        $('#watches').append(watch.url_170x135)
-      });
 
-$.each(items, function (inception) {
-	$.each(inception, function) {
-		$('.listing').append(inception.url_170x135)
+
+//populate the list with Images
+items.forEach (function (inception1) {
+	inception1.Images.forEach (inception2) {
+		$('.listing').append('<li><img src="'+inception2.url_170x135+'"></li>')
 		}
 		});
 }
 		</script>
+<!-- start grid layout -->
 		<div class="gallery">
 			<ul>
 			<li class="listing"><img class="img"></li>

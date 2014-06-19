@@ -1,6 +1,12 @@
 @import url("http://fonts.googleapis.com/css?family=Lato|Rufina");
 @import "bourbon/bourbon";
 
+//body styles
+h1 {
+	font-family: 'Rufina', serif;
+	color: #CD5300;
+}
+
 //Gallery layout
 div.gallery {
     margin: 0px;

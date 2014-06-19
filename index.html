@@ -6,8 +6,7 @@
 	<meta charset="UTF-8">
 	<body>
 		<script>
-			var items= [
-    {
+			var items= [{
       "listing_id":61398099,
       "state":"active",
       "user_id":8945712,
@@ -2098,11 +2097,35 @@
     "effective_page":1,
     "next_page":null
   }
-]
-items=$.map(items, Images
+];
 
+items=$.map(items, function (images) {
+	return images.Images; 
+});
+
+items.forEach(function(item) {
+      item.Images.forEach(function(watch){
+        $('#watches').append(watch.url_170x135)
+      });
+
+$.each(items, function (inception) {
+	$.each(inception, function) {
+		$('.listing').append(inception.url_170x135)
+		}
+		});
+}
 		</script>
-
-
+		<div class="gallery">
+			<ul>
+			<li class="listing"><img class="img"></li>
+			<li class="listing"><img class="img"></li>
+			<li class="listing"><img class="img"></li>
+			<li class="listing"><img class="img"></li>
+			<li class="listing"><img class="img"></li>
+			<li class="listing"><img class="img"></li>
+			<li class="listing"><img class="img"></li>
+			<li class="listing"><img class="img"></li>
+			<li class="listing"><img class="img"></li>
+		</ul>
 	</body>
 </html>

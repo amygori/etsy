@@ -1,9 +1,22 @@
 @import "http://fonts.googleapis.com/css?family=Lato|Rufina";
 @import "bourbon/bourbon"
 
-// Flexible grid
-@function flex-grid($columns, $container-columns: $fg-max-columns) {
-  $width: $columns * $fg-column + ($columns - 1) * $fg-gutter;
-  $container-width: $container-columns * $fg-column + ($container-columns - 1) * $fg-gutter;
-  @return percentage($width / $container-width);
+//Gallery layout
+div.gallery {
+    margin: 0px;
+    padding: 5px;
+    border: 1px solid #0000ff;
+    height: auto;
+    width: 80%;
+    float: left;
+   }
+
+div.listing {
+	height: 220px;
+	display: inline-block;
 }
+
+.listing p {
+	text-align: left;
+}
+

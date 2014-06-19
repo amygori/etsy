@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+		<link href="styles/main.min.css" rel="stylesheet" type="text/css">
+
 	</head>
 	<meta charset="UTF-8">
 	<body>
@@ -2105,15 +2107,28 @@
 
 
 
-//populate the list with Images
-items.forEach (function (inception1) {
+//populate the list with Images -- not working, but why??
+/*items.forEach (function (inception1) {
 	inception1.Images.forEach (function (inception2) {
-		$('.listing').append('<li><img src="'+inception2.url_170x135+'"></li>')
-		}
+		$('ul').append('<li><img src="'+inception2.url_170x135+'"></li>')
 		});
-}
+		});*/
+
+//jQuery: get images and populate list
+$.each(items, function( i, img ) {
+    var listing = "<li>" + img + "</li>";
+    $(".listing").append(listing);
+});
+
+//Just get the titles
+items.forEach (function (getTitle) {
+	$('li').append(getTitle.title);
+})
+
+
 		</script>
 <!-- start grid layout -->
+		
 		<div class="gallery">
 			<ul>
 			<li class="listing"><img class="img"></li>
